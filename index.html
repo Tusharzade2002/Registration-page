@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #0000cc;
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+               height: 500px;
+               width: 900px;
+               margin: 40px 0px;
+               display: flex;
+        }
+        .container-left{
+            width: 40%;
+            background-color: #3366ff;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .container-right{
+            background-color: aliceblue;
+            height: 100%;
+            width: 100%;
+           
+        }
+        .image{
+            height: 200px;
+        }
+        .text{
+            font-size:30px;
+            font-family:'Gill Sans';
+            font-weight: 600;
+            margin-top: 40px;
+            color: #4dff88;
+        }
+      
+        .container-inside{
+           display: flex;
+           height: 60%;
+
+        }
+        .form-left{
+              width: 50%;
+         }
+         .form-right{
+            width: 50%;
+            background-color: aliceblue;
+         }
+         .form-element{
+            margin: 35px;
+         }
+         .form-element input{
+            margin: 5px;
+            height: 20px;
+            width: 170px;
+            padding-left: 9px;
+         }
+         .form-element label{
+            margin: 8px 10px;
+         }
+         h1{
+            text-align: center;
+            margin: 5px;
+           
+         }
+         .text-name{
+            margin-top: 40px ;
+         }
+         .submit{
+            cursor: pointer;
+            text-align: center;
+            padding: 9px 20px;
+            display: block;
+            margin: auto;
+            font-size: 20px;
+            background-color: #4dff88;
+            border: none;
+            color: white;
+            font-family: 'Arial Narrow Bold', sans-serif;
+            font-stretch:extra-expanded;
+         }
+         .submit:hover{
+            background-color: #33ff33;
+            transition: 1s;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-left">
+                  <img  class="image" src="image color.svg"/> 
+                  <p class="text">Registration</p>
+        </div>
+        <div class="container-right">
+            <div class="text-name">
+              <h1>Registrstion </h2>
+              <h1 style="color:#0000cc">Form</h2>
+           </div>
+            <div class="container-inside">
+                    <div class="form-left">
+                      <div class="form-element">
+                        <label> First Name</label>
+                        <br>
+                        <input type="text" placeholder="e.g. john"/> <br>
+                      </div>
+                      <div class="form-element">
+                        <label> Email Address</label>
+                        <br>
+                        <input type="email" placeholder="e.g.johndoe@gmail.com"/> <br>
+                      </div> 
+                      <div class="form-element">
+                        <label> Password</label>
+                        <br>
+                        <input type="password" placeholder="e.g. 098765"/> <br>
+                      </div>
+                    </div>
+                    <div class="form-right">
+                      <div class="form-element">
+                        <label>Last Name </label>
+                        <br>
+                        <input type="text" placeholder="e.g. doe"/> <br>
+                      </div>
+                      <div class="form-element">
+                        <label> Mobile Number</label>
+                        <br>
+                        <input type="number" placeholder="e.g. 8693026562" /> <br>
+                      </div>
+                      <div class="form-element">
+                        <label> Address</label>
+                        <br>
+                        <input type="text" placeholder="e.g. Dheli"/> <br>
+                      </div>
+                    </div> 
+            </div>
+            <input value="submit" class="submit" type="submit"/>
+        </div>
+    </div>
+</body>
+</html>
